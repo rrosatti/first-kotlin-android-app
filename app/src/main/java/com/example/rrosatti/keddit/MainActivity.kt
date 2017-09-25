@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import com.example.rrosatti.keddit.features.news.NewsFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (savedInstanceState == null) {
-            changeFragment(NewsFragement())
+            changeFragment(NewsFragment())
         }
     }
 
