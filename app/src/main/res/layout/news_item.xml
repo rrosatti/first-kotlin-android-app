@@ -8,7 +8,7 @@
     <!-- Left Thumbnail Image -->
     
     <ImageView
-        android:id="@+id/img_thumbnail"
+        android:id="@+id/imgThumbnail"
         android:layout_width="50dip"
         android:layout_height="50dip"
         android:layout_marginBottom="5dp"
@@ -22,8 +22,8 @@
         android:id="@+id/description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/img_thumbnail"
-        android:layout_toEndOf="@+id/img_thumbnail"
+        android:layout_alignTop="@+id/imgThumbnail"
+        android:layout_toEndOf="@+id/imgThumbnail"
         android:textColor="#040404"
         android:textSize="15sp"
         android:textStyle="bold"

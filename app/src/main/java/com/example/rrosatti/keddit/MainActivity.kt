@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         ft.setCustomAnimations(
                 R.anim.abc_fade_in, R.anim.abc_fade_out, R.anim.abc_popup_enter,
                 R.anim.abc_popup_exit)
-        ft.replace(R.id.activity_base_content, f)
+        ft.replace(R.id.activityBaseContent, f)
         ft.addToBackStack(null)
         ft.commit()
     }
