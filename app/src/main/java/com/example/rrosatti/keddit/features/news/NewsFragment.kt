@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.rrosatti.keddit.R
 import com.example.rrosatti.keddit.commons.extensions.inflate
+import com.example.rrosatti.keddit.features.news.adapter.NewsAdapter
 import kotlinx.android.synthetic.main.news_fragment.*
 
 /**
@@ -24,6 +25,14 @@ class NewsFragment : Fragment() {
 
         newsList.setHasFixedSize(true)
         newsList.layoutManager = LinearLayoutManager(context)
+
+        initAdapter()
+    }
+
+    private fun initAdapter() {
+        if (newsList.adapter == null) {
+            newsList.adapter = NewsAdapter()
+        }
     }
 
 }

@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
 
-
         if (savedInstanceState == null) {
             changeFragment(NewsFragment())
         }
