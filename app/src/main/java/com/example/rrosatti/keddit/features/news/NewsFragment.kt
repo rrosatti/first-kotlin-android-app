@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.rrosatti.keddit.R
 import com.example.rrosatti.keddit.commons.RedditNewsItem
+import com.example.rrosatti.keddit.commons.RxBaseFragment
 import com.example.rrosatti.keddit.commons.extensions.inflate
 import com.example.rrosatti.keddit.features.news.adapter.NewsAdapter
 import kotlinx.android.synthetic.main.news_fragment.*
@@ -18,7 +19,7 @@ import rx.schedulers.Schedulers
 /**
  * Created by rrosatti on 9/24/17.
  */
-class NewsFragment : Fragment() {
+class NewsFragment : RxBaseFragment() {
 
     private val newsManager by lazy { NewsManager() }
 
@@ -60,6 +61,7 @@ class NewsFragment : Fragment() {
                                 Snackbar.make(newsList, e.message ?: "", Snackbar.LENGTH_LONG).show()
                         }
                 )
+        subscriptions.add(subscription)
     }
 
 }
